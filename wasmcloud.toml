@@ -1,0 +1,7 @@
+name = "globby"
+language = "tinygo"
+type = "actor"
+version = "0.1.0"
+
+[actor]
+claims = ["wasmcloud:httpserver", "wasmcloud:builtin:logging", "wasmcloud:blobstore"]
