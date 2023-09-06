@@ -26,7 +26,7 @@ _default:
 build:
   mkdir -p build
   {{tinygo}} build -target=wasi -scheduler=none -o {{expected_wasm_path}} .
-  {{wash}} claims sign --name {{module_name}} {{expected_wasm_path}} -f -q
+  {{wash}} claims sign --name {{module_name}} {{expected_wasm_path}} -f -q -l
 
 clean:
   rm -rf ./build
